@@ -1,40 +1,40 @@
 export class Serie{
     private id: number;
     private name: string;
-    private canal: string;
-    private score: number;
-    private resume: string;
-    private page: string;
-    private img : string;
-    constructor(id:number, name:string, canal:string, score:number,  resume:string, page:string, img:string){
+    private channel: string;
+    private seasons: number;
+    private description: string;
+    private webpage: string;
+    private poster : string;
+    constructor(id:number, name:string, channel:string, seasons:number,  description:string, webpage:string, poster:string){
         this.id = id;
         this.name = name;
-        this.canal =canal;
-        this.score=score;
-        this.resume = resume;
-        this.page = page
-        this.img =  img;
-        
+        this.channel =channel;
+        this.seasons=seasons;
+        this.description = description;
+        this.webpage = webpage
+        this.poster =  poster;
+
     }
     public getId():number{
         return this.id;
     }
-    public getCanal(): string{
-        return this.canal;
+    public getchannel(): string{
+        return this.channel;
     }
-    public getResume(): string{
-        return this.resume;
+    public getdescription(): string{
+        return this.description;
     }
-    public getPage(): string{
-        return this.page;
+    public getwebpage(): string{
+        return this.webpage;
     }
-    public getScore(){
-        return this.score;
+    public getseasons(){
+        return this.seasons;
     }
     public getName(): string{
         return this.name;
     }
-    public getImg(): string{
-        return this.img;
+    public getposter(): string{
+        return this.poster;
     }
 }
